@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur d'Unités</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Convertisseur d'Unités</h1>
+    </header>
+
+    <section>
+
+        <form id="conversionForm">
+            <label for="value">Valeur :</label>
+            <input type="number" id="value" name="value" required>
+
+            <label for="inputUnit">Unité :</label>
+            <select id="inputUnit" name="inputUnit" required>
+                <option value="1">Mètre</option>
+                <option value="1000">Kilomètre</option>
+                <option value="0.1">centimetre</option>
+                <option value="330">Tour Eiffel</option>
+                <option value="1.756">Homme</option>
+                <option value="56">Ariane 5</option>
+                <option value="0.1467">Smartphone</option>
+                <option value="1970">Golden Gate</option>
+            </select>
+
+            <label for="outputUnit">Unité de sortie :</label>
+            <select id="outputUnit" name="outputUnit" required>
+                <option value="1">Mètre</option>
+                <option value="1000">Kilomètre</option>
+                <option value="0.1">centimetre</option>
+                <option value="330">Tour Eiffel</option>
+                <option value="1.756">Homme</option>
+                <option value="56">Ariane 5</option>
+                <option value="0.1467">Smartphone</option>
+                <option value="1970">Golden Gate</option>
+            </select>
+
+            <button type="button" onclick="convertUnits()">Convertir</button>
+        </form>
+        <output id="result">
+        </output>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Convertisseur d'Unités. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
