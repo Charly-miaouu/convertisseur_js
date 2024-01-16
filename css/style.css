@@ -12,7 +12,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
     width: 100%;
 }
@@ -27,14 +27,21 @@ form {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 49%;
+    flex: 50%;
     margin-right: 10px;
 }
 
-select, input, button {
+select, input{
     margin-bottom: 10px;
     width: 100%;
     padding: 10px;
+}
+
+button {
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 9px #a1a1a1,
+                -5px -5px 9px #ffffff;
 }
 
 output {
@@ -50,7 +57,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     position: fixed;
     bottom: 0;
     width: 100%;

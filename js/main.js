@@ -1,10 +1,9 @@
+const value = document.getElementById('value');
+const inputUnit = document.getElementById('inputUnit');
+const outputUnit = document.getElementById('outputUnit');
+
 function convertUnits() {
-    const value = parseFloat(document.getElementById('value').value);
-    const inputUnit = document.getElementById('inputUnit').value;
-    const outputUnit = document.getElementById('outputUnit').value;
-
-    const result = performConversion(inputUnit, outputUnit, value);
-
+    const result = performConversion(inputUnit.value, outputUnit.value, value.value);
     document.getElementById('result').textContent = `Résultat : ${result}`;
 }
 
@@ -15,4 +14,8 @@ function performConversion(inputUnit, outputUnit, value) {
     return inputUnit * value / outputUnit;
 }
 
-//bouton echanger valeurs
+function swapUnits() {
+    const temp = inputUnit.value;
+    inputUnit.value = outputUnit.value;
+    outputUnit.value = temp;
+}
