@@ -41,14 +41,17 @@
                 <option value="1970">Golden Gate</option>
             </select>
 
-            <button type="button" onclick="convertUnits()">Convertir</button>
         </form>
+        
+        <button type="button" id="convertButton" onclick="convertUnits()">Convertir</button>
+        
+        <button type="button" id="swapButton" onclick="swapUnits()">Inverser</button>
 
         <div class="horizontal-line"></div>
-
+        
         <div id="outputContainer">
-            <button type="button" id="swapButton" onclick="swapUnits()">Inverser</button>
-            <output id="result">RESULTAT ICI</output>
+            <output id="result"></output>
+            <output id="graphic"></output>
         </div>
     </section>
 

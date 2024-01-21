@@ -26,6 +26,10 @@ section {
 }
 
 form {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -43,30 +47,16 @@ input {
 
 section {
     display: flex;
-    flex-direction: column; /* Pour empiler les éléments dans la colonne */
+    flex-direction: column;
     width: 100%;
 }
 
-#outputContainer {
-    text-align: center; /* Centre le contenu horizontalement */
-    margin-top: 20px; /* Ajustez selon vos besoins */
-}
-
-button, output {
-    margin-bottom: 10px;
-}
-
-output {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 49%;
-    margin-left: 10px;
-    margin-top: 50px;
-}
-
 button {
+    flex-direction:row;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
     background: #e0e0e0;
     box-shadow: 5px 5px 9px #a1a1a1, -5px -5px 9px #ffffff;
@@ -81,6 +71,59 @@ button {
     color: #333;
     transition: all 0.2s ease-in-out;
 }
+
+#outputContainer {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 50%;
+    margin-right: 10px;
+}
+
+/*#convertButton {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 9px #a1a1a1, -5px -5px 9px #ffffff;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+}
+
+#swapButton {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 9px #a1a1a1, -5px -5px 9px #ffffff;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+}*/
 
 footer {
     background-color: #333;
