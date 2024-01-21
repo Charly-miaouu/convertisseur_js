@@ -1,12 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    height: 100vh;
     display: flex;
-    flex-direction: column; 
-    align-items: stretch;
-    min-height: 100vh;
+    flex-direction: column;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
 }
 
 header {
@@ -31,17 +34,26 @@ form {
     margin-right: 10px;
 }
 
-select, input{
+select,
+input {
     margin-bottom: 10px;
     width: 100%;
     padding: 10px;
 }
 
-button {
-    border-radius: 12px;
-    background: #e0e0e0;
-    box-shadow:  5px 5px 9px #a1a1a1,
-                -5px -5px 9px #ffffff;
+section {
+    display: flex;
+    flex-direction: column; /* Pour empiler les éléments dans la colonne */
+    width: 100%;
+}
+
+#outputContainer {
+    text-align: center; /* Centre le contenu horizontalement */
+    margin-top: 20px; /* Ajustez selon vos besoins */
+}
+
+button, output {
+    margin-bottom: 10px;
 }
 
 output {
@@ -51,6 +63,23 @@ output {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 49%;
     margin-left: 10px;
+    margin-top: 50px;
+}
+
+button {
+    border-radius: 4px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 9px #a1a1a1, -5px -5px 9px #ffffff;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.2s ease-in-out;
 }
 
 footer {
