@@ -1,6 +1,7 @@
 const value = document.getElementById('value');
 const inputUnit = document.getElementById('inputUnit');
 const outputUnit = document.getElementById('outputUnit');
+document.getElementById('value').focus();
 
 function convertUnits() {
     const result = performConversion(inputUnit.value, outputUnit.value, value.value);
@@ -26,6 +27,14 @@ function getEmoji(outputUnit) {
         return '👨🏻‍🏫';
     else if (outputUnit == '1000')
         return '🇰🇲';
+    else if (outputUnit == '9.14')
+        return '🤖';
+    else if (outputUnit == '0.3048')
+        return '🦶🏻';
+    else if (outputUnit == '0.65')
+        return '🥖';
+    else if (outputUnit == '46.05')
+        return '🗽';
     else
         return '🇨🇲';
 
@@ -35,10 +44,11 @@ function performConversion(inputUnit, outputUnit, value) {
     let result = 0;
     if (inputUnit === outputUnit) {
         result = value;
+        return result;
     } else {
         result = inputUnit * value / outputUnit
+        return result.toFixed(2);
     }
-    return result.toFixed(2);
 }
 
 function swapUnits() {
