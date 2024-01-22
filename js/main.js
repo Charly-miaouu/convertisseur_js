@@ -6,6 +6,7 @@ function convertUnits() {
     const result = performConversion(inputUnit.value, outputUnit.value, value.value);
     const graphic = getEmoji(outputUnit.value);
     document.getElementById('result').textContent =`Résultat : ${result}`;
+    document.getElementById('graphic').textContent = ``;
     for (let i = 0; i < result; i++)
         document.getElementById('graphic').textContent += `${graphic}`;
 }
@@ -31,10 +32,13 @@ function getEmoji(outputUnit) {
 }
 
 function performConversion(inputUnit, outputUnit, value) {
+    let result = 0;
     if (inputUnit === outputUnit) {
-        return value;
+        result = value;
+    } else {
+        result = inputUnit * value / outputUnit
     }
-    return inputUnit * value / outputUnit;
+    return result.toFixed(2);
 }
 
 function swapUnits() {
